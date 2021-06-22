@@ -1,0 +1,86 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(220deg, rgb(0, 153, 255),rgb(0, 225, 255),rgba(0, 60, 255, 0.822));
+}
+.project_5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tic_tac_toe{
+    font-size: 1.2rem;
+    margin: 20px auto;
+    text-align: center;
+}
+.container{
+    width: 350px;
+    background: transparent;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+.container .cell{
+    font-family: "Permanent Marker", cursive;
+    border: 2px solid #000;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7.5rem;
+    color: #fff;
+}
+.container .cell:first-child{
+    border-top: none;
+    border-left: none;
+}
+.container .cell:nth-child(2){
+    border-top: none;
+}
+.container .cell:nth-child(3){
+    border-top: none;
+    border-right: none;
+}
+.container .cell:nth-child(4){
+    border-left: none;
+}
+.container .cell:nth-child(6){
+    border-right: none;
+}
+.container .cell:nth-child(7){
+    border-left: none;
+    border-bottom: none;
+}
+.container .cell:nth-child(8){
+    border-bottom: none;
+}
+.container .cell:nth-child(9){
+    border-bottom: none;
+    border-right: none;
+}
+button{
+    margin: 50px auto;
+    width: 180px;
+    height: 60px;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+    transition: .2s ease-in-out;
+    border: 2px solid #fff;
+    background: #000;
+    color: #ffff;
+}
+button:focus{
+    outline: none;
+}
